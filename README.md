@@ -16,8 +16,8 @@ This was written in a way to make the simplest development environment possible,
 * Folder for contract files
 * <b>Calculator.sol:</b> Basic calculator contract.
 
-### BitToken:
-* ERC-20 Token implementing ERC-20 interface
+#### Bonus file: .gitattributes
+* Allows GitHub to recognize your .sol contract syntax!
 
 <br>
 
