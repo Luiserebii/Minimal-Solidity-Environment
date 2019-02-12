@@ -29,5 +29,7 @@ This was written in a way to make the simplest development environment possible,
 <br>
 
 ## Suggestions?
-If you have any suggestions or ideas, email me at luis@serebii.io, or make a pull request! I am more than happy to chat :)
--Luiserebii
+If you have any suggestions or ideas, email me at luis@serebii.io, or make a pull request! I am more than happy to chat :) <br>
+<br>
+
+<b> - Luiserebii</b>
