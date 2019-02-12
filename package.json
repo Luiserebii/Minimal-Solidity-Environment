@@ -4,6 +4,7 @@
   "description": "A minimal environment for Solidity smart contract development.",
   "main": "index.js",
   "scripts": {
+    "compile": "node compile.js",
     "test": "mocha -- test.js"
   },
   "repository": {

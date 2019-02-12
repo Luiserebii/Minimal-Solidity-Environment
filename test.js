@@ -72,10 +72,22 @@ describe('Testing Calculator.sol functions...', () => {
 
    it('Addition works (+sum is as expected)', async () => {
 
+      //Setup variables
       let a = 1;
       let b = 2;
-      const c = await Calculator.methods.add(a, b).send({ from: ethAccountMaster });      
-      assert.equal(a + b, c);
+
+      //Create transaction calling "add" method, and receive receipt
+      const receipt = await Calculator.methods.add(a, b).send({ from: ethAccountMaster });
+
+      //Read event logs from receipt
+      let res_a = receipt.events.Addition.returnValues._a;
+      let res_b = receipt.events.Addition.returnValues._b;
+      let res_sum = receipt.events.Addition.returnValues._sum;
+
+      //Test for expected values by equality
+      assert.equal(res_a, a);
+      assert.equal(res_b, b);
+      assert.equal(res_sum, a + b);
 
    });
 });
