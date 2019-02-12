@@ -23,7 +23,7 @@ This was written in a way to make the simplest development environment possible,
 
 ## Instructions:
 * Try to browse over the files written; what is going on in them? How do they relate to one another?
-* Install the required dependencies through: `npm install`
+* Install the required dependencies listed in <b>package.json</b> by running: `npm install`
 * Run the compile.js script through: `npm run compile` or `node compile.js`
 * Run the test.js script through: `npm test` or `mocha -- test.js`
 
