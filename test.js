@@ -8,11 +8,19 @@ const provider = ganache.provider();
 const web3 = new Web3(provider);
 
 //Receive compiler data from compile.js script
-const compilerStuff = require('../compile');
+const compilerStuff = require('./compile');
+
+//Simply for clarity:
+let calculatorFileName = "Calculator.sol";
+let calculatorContractName = "Calculator";
 
 //Extracting and defining contract interface/bytecode for deployment
-const calcInterface = compilerStuff['Calculator.sol']['interface'];
-const calcBytecode = compilerStuff['Calculator.sol']['bytecode'];
+//NOTE: String referred to is equivalent to:
+// = compilerStuff[calculatorFileName + ":" + calculatorContractName]
+//
+//For more details, see official Solidity documentation
+const calcInterface = compilerStuff['Calculator.sol:Calculator']['interface'];
+const calcBytecode = compilerStuff['Calculator.sol:Calculator']['bytecode'];
 
 
 
@@ -28,13 +36,12 @@ const calcBytecode = compilerStuff['Calculator.sol']['bytecode'];
 Tests for Calculator.sol:
 --------------------------------
 -addition is valid
--substraction is valid
+-subtraction is valid
 -multiplication is valid
 -division is valid
 
 */
 
-//
 
 
 //Account setup
@@ -57,11 +64,32 @@ beforeEach(async () => {
 
 
 describe('Testing Calculator.sol functions...', () => {
+
+   it('Contract is deployed', async () => {
+      assert.ok(await Calculator.options.address);
+   });
+
+
    it('Addition works (+sum is as expected)', async () => {
 
-      assert.ok(await BitToken.options.address);
-      //Owner is expected
-      assert.equal(ethAccountMaster, await BitToken.methods.owner().call());
+      let a = 1;
+      let b = 2;
+      const c = await Calculator.methods.add(a, b).send({ from: ethAccountMaster });      
+      assert.equal(a + b, c);
 
    });
 });
+
+
+/*
+=========================
+Deployment function
+(Utility)
+=========================
+*/
+async function deployCalculator(addressDeployer){
+   _Calculator = await new web3.eth.Contract(JSON.parse(calcInterface))
+        .deploy({ data: calcBytecode, arguments: [] })
+        .send({ from: addressDeployer, gas: '1000000'});
+   return _Calculator;
+}
