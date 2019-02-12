@@ -6,18 +6,18 @@ This was written in a way to make the simplest development environment possible,
 <br>
 
 ## Overview:
-### compile.js 
+### -compile.js 
 * Script for compiling Solidity smart contract code (Calculator.sol)
 
-### test.js 
+### -test.js 
 * Test scripts with Mocha to check for any potential issues
 
-### contracts/
+### -contracts/
 * Folder for contract files
 * <b>Calculator.sol:</b> Basic calculator contract.
 
-#### Bonus file: .gitattributes
-* Allows GitHub to recognize your .sol contract syntax!
+### Bonus file: .gitattributes
+* Allows GitHub to recognize your .sol contract syntax! Credits to kinrezC for this tip.
 
 <br>
 
@@ -30,6 +30,4 @@ This was written in a way to make the simplest development environment possible,
 
 ## Suggestions?
 If you have any suggestions or ideas, email me at luis@serebii.io, or make a pull request! I am more than happy to chat :) <br>
-<br>
-
 <b> - Luiserebii</b>
