@@ -1,4 +1,7 @@
 # Minimal Solidity Environment
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Luiserebii/Minimal-Solidity-Environment.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Luiserebii/Minimal-Solidity-Environment/context:javascript)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Luiserebii/Minimal-Solidity-Environment.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Luiserebii/Minimal-Solidity-Environment/alerts/)
+
 A minimal environment for Solidity smart contract development.
 
 This was written in a way to make the simplest development environment possible, with minimum design choices. The focus is more on the basic structure of dApp projects, and less on advanced best practices. Ideally, anyone will be able to pick this up and learn the fundamentals of writing and testing Ethereum smart contracts in Solidity with Node.js and Mocha!
