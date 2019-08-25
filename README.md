@@ -1,4 +1,6 @@
 # Minimal Solidity Environment
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Luiserebii/Minimal-Solidity-Environment?color=g)
+![GitHub](https://img.shields.io/github/license/Luiserebii/Minimal-Solidity-Environment?color=g)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Luiserebii/Minimal-Solidity-Environment.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Luiserebii/Minimal-Solidity-Environment/context:javascript)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Luiserebii/Minimal-Solidity-Environment.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Luiserebii/Minimal-Solidity-Environment/alerts/)
 

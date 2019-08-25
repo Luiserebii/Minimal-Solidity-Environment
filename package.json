@@ -1,6 +1,6 @@
 {
   "name": "minimalsolidityenvironment",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A minimal environment for Solidity smart contract development.",
   "main": "index.js",
   "scripts": {
