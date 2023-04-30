@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Luiserebii/Minimal-Solidity-Environment#readme",
   "dependencies": {
     "ganache-cli": "6.1.8",
-    "mocha": "5.2.0",
+    "mocha": "10.2.0",
     "solc": "0.4.25",
     "web3": "1.0.0-beta.35"
   }
